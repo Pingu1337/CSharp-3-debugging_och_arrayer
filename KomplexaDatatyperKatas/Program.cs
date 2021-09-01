@@ -18,23 +18,18 @@ namespace KomplexaDatatyperKatas
             int amountBike = 0;
             int amountTrampoline = 0;
             int amountBouquet = 0;
-            int amountOther = 0;
-            int t = 0;
             int total = 0;
 
             List<int> orderlistBike = new List<int>();
             List<int> orderlistTrampoline = new List<int>();
             List<int> orderlistBouquet = new List<int>();
             List<int> orderlistOther = new List<int>();
-
             List<string> otherStringList = new List<string>();
-
             List<int> totalOrderList = new List<int>();
 
 
             OnlineOrders var1 = new OnlineOrders();
             OnlineOrders x = var1;
-
 
 
             while (ordering)
@@ -91,7 +86,6 @@ namespace KomplexaDatatyperKatas
                     amountBike = orderlistBike.Count;
                     amountTrampoline = orderlistTrampoline.Count;
                     amountBouquet = orderlistBouquet.Count;
-                    amountOther = orderlistOther.Count;
 
                     total = (orderlistBike.Count + orderlistTrampoline.Count + orderlistBouquet.Count + orderlistOther.Count);
                     totalOrderList.Add(total);
@@ -150,54 +144,7 @@ namespace KomplexaDatatyperKatas
 
 
                 }
-
                 Console.Clear();
-
-
-
-                /* amountBike = orderlistBike.Count;
-                 amountTrampoline = orderlistTrampoline.Count;
-                 amountBouquet = orderlistBouquet.Count;
-                 amountOther = orderlistOther.Count;
-
-                 total = (orderlistBike.Count + orderlistTrampoline.Count + orderlistBouquet.Count + orderlistOther.Count);
-                 totalOrderList.Add(total);
-
-                 if (totalOrderList.Count > 0)
-                 {
-                     Console.WriteLine("Total items in cart: " + " " + total);
-                 }
-
-                 if (orderlistBike.Count > 0)
-                 { 
-                     Console.WriteLine("You ordered " + amountBike + " " + var1.orderName);
-                 }
-
-                 if (orderlistTrampoline.Count > 0)
-                 {
-                     Console.WriteLine("You ordered " + amountTrampoline + " Trampolines");
-                 }
-
-                 if (orderlistBouquet.Count > 0)
-                 {
-                     Console.WriteLine("You ordered " + amountBouquet + " Bouquets");
-                 }
-
-                 if (orderlistOther.Count > 0)
-                 {
-
-                     foreach (string other in otherStringList)
-                     {
-                         Console.WriteLine("You ordered " + amountOther + " " + other);
-                     }
-
-                 } */
-
-
-
-
-
-
             }
 
         }
